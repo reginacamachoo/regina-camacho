@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="ejercicio 1" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 1</title>
+  <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+
+    <!-- Fondo -->
+    <a-sky color="black"></a-sky>
+
+    <!-- Piso -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="grey"></a-plane>
+
+
+    <!-- ============ AQUI VAN TUS OBJETOS ============ -->
+
+    <!-- Camara con cursor (para que funcionen los clics) -->
+    <a-entity camera look-controls wasd-controls>
+      <a-cursor color="#333"></a-cursor>
+    </a-entity>
+
+  </a-scene>
+</body>
+</html>
