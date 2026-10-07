@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
+<head>
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
     <!-- Piso gris 10 x 10 m, acostado -->
-      <a-plane width="10" height="10" rotation="-90 0 0" color="gray"></a-plane>
+    <a-plane width="10" height="10" rotation="-90 0 0" color="gray"></a-plane>
+    <!-- Caja roja 1 m, sobre el piso, 3 m al frente y 1 m a la izquierda -->
+    <a-box width="1" height="1" depth="1" color="red"
+           position="-1 0.5 -3"
+           animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 4000; easing: linear; loop: true">
+    </a-box>
 
-
-    <!-- ============ AQUI VAN TUS OBJETOS ============ -->
-
-    <!-- Camara con cursor (para que funcionen los clics) -->
-    <a-entity camera look-controls wasd-controls>
-      <a-cursor color="#333"></a-cursor>
-    </a-entity>
 
   </a-scene>
 </body>
