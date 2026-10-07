@@ -17,6 +17,15 @@
     </a-assets>
     <!-- Piso gris 10 x 10 m, acostado -->
     <a-plane width="10" height="10" rotation="-90 0 0" color="gray"></a-plane>
+    <!-- Personaje: 4 m al frente, mitad de tamano, girado 180 en Y, con su animacion.
+         La musica suena al hacer clic sobre el -->
+    <a-entity gltf-model="#drone"
+              position="0 0 -4"
+              scale="0.5 0.5 0.5"
+              rotation="0 180 0"
+              animation-mixer
+              sound="src: #musica; on: click">
+    </a-entity>
 
 
 
